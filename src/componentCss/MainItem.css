@@ -1,0 +1,29 @@
+.flex {
+  display: flex;
+}
+.MainItemBox {
+  width: 100vw;
+  height: auto;
+  justify-content: center;
+}
+.buttonMenu {
+  width: 1592px;
+  height: 65px;
+}
+.btnList {
+  width: 800px;
+  height: 68px;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+}
+.btnList li {
+  list-style: none;
+  background-color: #fff;
+  padding: 8px 15px;
+  color: #000000;
+  cursor: pointer;
+}
+.action {
+  background-color: #000000;
+}

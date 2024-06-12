@@ -1,0 +1,98 @@
+.flex {
+  display: flex;
+}
+h1 {
+  font-weight: bold;
+}
+.main-bg {
+  height: 92vh;
+  position: relative;
+}
+.main-bg video {
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main-sl {
+  height: 80vh;
+  position: relative;
+}
+.main-sl video {
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
+}
+.main-img {
+  width: 100vw;
+  height: 80vh;
+  position: relative;
+}
+.main-img img {
+  width: 100%;
+  height: 100%;
+}
+.mainTextBox {
+  width: 300px;
+  height: 200px;
+  position: absolute;
+  bottom: 9px;
+  left: 101px;
+  text-align: left;
+  color: #ffffff;
+}
+@keyframes btnAnimation {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(6px, 5px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+.btnBox {
+  width: 140px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 3;
+}
+.animation {
+  animation: btnAnimation 0.7s ease;
+}
+.btnBox a {
+  width: 100%;
+  height: 100%;
+  font-size: 0.8rem;
+  color: #000000;
+  text-decoration: none;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: bold;
+}
+.btnBox img {
+  width: 30px;
+}
+.backBox {
+  display: inline-block;
+  border: 1px solid #000000;
+  width: 140px;
+  height: 50px;
+  position: relative;
+  left: 6px;
+  bottom: 44px;
+  z-index: 1;
+}
+.blackB {
+  color: black;
+}
+.main-img .btnBox {
+  background-color: #000000;
+}
+.main-img .btnBox a {
+  color: #ffffff;
+}
