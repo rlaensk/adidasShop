@@ -2,28 +2,44 @@
   display: flex;
 }
 .MainItemBox {
-  width: 100vw;
+  width: 100%;
   height: auto;
-  justify-content: center;
+  flex-direction: column;
+}
+.SaleTap {
+  width: 100%;
+  min-width: 1360px;
+  margin: 30px 0;
 }
 .buttonMenu {
-  width: 1592px;
+  width: 100%;
   height: 65px;
+  margin: 50px 0 0 0;
 }
+.btnList .active {
+  background-color: #000000;
+  color: #ffffff;
+}
+
 .btnList {
-  width: 800px;
+  width: 620px;
   height: 68px;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   margin: 0;
+  padding: 0;
 }
 .btnList li {
   list-style: none;
   background-color: #fff;
-  padding: 8px 15px;
+  padding: 8px 8px;
   color: #000000;
   cursor: pointer;
+  font-weight: bold;
+  font-size: 0.9rem;
+  border: 1px solid #000000;
 }
-.action {
-  background-color: #000000;
+.eventItemBox {
+  width: 100%;
+  height: 400px;
 }

@@ -1,23 +1,48 @@
 import React, { useState } from "react";
-
+import Sale from "./Sale";
 import "../componentCss/MainItem.css";
+import "../componentCss/Sale.css";
+import "../componentCss/reset.css";
+import { navMenu } from "../date/itenm.js";
+import { UpTo, Y_3, Last, Comfy } from "./ItemList.js";
 
 const MainItem = () => {
-  const [clickBtn, setClickBtn] = useState([false, false, false, false]);
-
-  const btnClick = (index) => {
-    set;
+  const [navlist, setNavlist] = useState({ menu1: true });
+  const [selectedMenu, setSelectedMenu] = useState("menu1");
+  console.log(navMenu);
+  const menuComponent = {
+    menu1: <UpTo />,
+    menu2: <Y_3 />,
+    menu3: <Last />,
+    menu4: <Comfy />,
+  };
+  const btnClick = (id) => {
+    setNavlist((menu) => ({
+      [id]: !menu[id],
+    }));
+    setSelectedMenu(id);
   };
 
   return (
     <div className="MainItemBox flex">
+      <div className="SaleTap">
+        <Sale />
+      </div>
       <div className="buttonMenu">
         <ul className="btnList flex">
-          <li onClick={btnClick}>FOOTBALL HERITAGE ⚽</li>
-          <li onClick={btnClick}>COMFY SNEAKERS 👟</li>
-          <li onClick={btnClick}>FESTIVAL STYLING ✨</li>
-          <li onClick={btnClick}>TRACK PANTS 🎇</li>
+          {navMenu.map((state) => (
+            <li
+              onClick={() => btnClick(state.id)}
+              className={` ${navlist[state.id] ? "active" : ""}`}
+            >
+              {state.title}
+            </li>
+          ))}
         </ul>
+      </div>
+
+      <div className="eventItemBox">
+        {selectedMenu && menuComponent[selectedMenu]}
       </div>
     </div>
   );
