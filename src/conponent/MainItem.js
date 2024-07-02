@@ -9,7 +9,7 @@ import { UpTo, Y_3, Last, Comfy } from "./ItemList.js";
 const MainItem = () => {
   const [navlist, setNavlist] = useState({ menu1: true });
   const [selectedMenu, setSelectedMenu] = useState("menu1");
-  console.log(navMenu);
+
   const menuComponent = {
     menu1: <UpTo />,
     menu2: <Y_3 />,
@@ -25,13 +25,14 @@ const MainItem = () => {
 
   return (
     <div className="MainItemBox flex">
-      <div className="SaleTap">
+      {/* <div className="SaleTap">
         <Sale />
-      </div>
+      </div> */}
       <div className="buttonMenu">
         <ul className="btnList flex">
-          {navMenu.map((state) => (
+          {navMenu.map((state, index) => (
             <li
+              key={index}
               onClick={() => btnClick(state.id)}
               className={` ${navlist[state.id] ? "active" : ""}`}
             >

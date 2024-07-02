@@ -14,7 +14,7 @@ const UpTo = () => {
     <div className="hiddenBox">
       <div className="flex itemBox">
         {upTo.map((state, index) => (
-          <Link to={"/"} className="flex itemLink">
+          <Link to={"/detail"} key={index} className="flex itemLink">
             <div className="imgBox">
               <img src={`${process.env.PUBLIC_URL}${state.url}`} alt="itme" />
               <img
@@ -44,7 +44,7 @@ const Y_3 = () => {
     <div className="hiddenBox">
       <div className="flex itemBox">
         {y3.map((state, index) => (
-          <Link to={"/"} className="flex itemLink">
+          <Link to={"/detail"} key={index} className="flex itemLink">
             <div className="imgBox">
               <img src={`${process.env.PUBLIC_URL}${state.url}`} alt="itme" />
               <img
@@ -69,7 +69,7 @@ const Last = () => {
     <div className="hiddenBox">
       <div className="flex itemBox">
         {last.map((state, index) => (
-          <Link to={"/"} className="flex itemLink">
+          <Link to={"/detail"} key={index} className="flex itemLink">
             <div className="imgBox">
               <img src={`${process.env.PUBLIC_URL}${state.url}`} alt="itme" />
               <img

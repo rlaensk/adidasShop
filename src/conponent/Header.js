@@ -16,7 +16,7 @@ const Header = () => {
       return () => clearInterval(interval);
     }
   }, [location.pathname]);
-  console.log(headEvent.title);
+
   return (
     <>
       <Navbar bg="white" data-bs-theme="white" className="flex headerBox">
@@ -30,7 +30,7 @@ const Header = () => {
         </div>
         <Container className="navBar">
           <Navbar.Brand href="/" className="logoBox">
-            <img src={`${process.env.PUBLIC_URL}/logo.png`} />
+            <img src={`${process.env.PUBLIC_URL}/logo.png`} alt="logo" />
           </Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link href="/">MEN</Nav.Link>
