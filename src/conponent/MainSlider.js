@@ -24,7 +24,7 @@ const Mainslider = () => {
             onClick={() => addAnimation(0)}
           >
             <Link className="flex" to={"/"}>
-              자세히 보기
+              자세히보기
               <img src="./arrow.png" alt="seemore" />
             </Link>
           </div>

@@ -1,5 +1,14 @@
 import { configureStore, createSlice } from "@reduxjs/toolkit";
 
+import {
+  sizeModal,
+  deliveryModal,
+  precautionsModal,
+  asModal,
+  infoModal,
+} from "./../store/detailSlice.js";
+import { mainEvent } from "./mainEventSlice.js";
+
 // navMenu라는 slice를 생성합니다.
 let navMenu = createSlice({
   name: "navMenu",
@@ -11,5 +20,11 @@ let navMenu = createSlice({
 export default configureStore({
   reducer: {
     navMenu: navMenu.reducer, // store에 navMenu slice를 추가합니다.
+    sizeModal: sizeModal.reducer,
+    deliveryModal: deliveryModal.reducer,
+    precautionsModal: precautionsModal.reducer,
+    asModal: asModal.reducer,
+    infoModal: infoModal.reducer,
+    mainEvent: mainEvent.reducer,
   },
 });

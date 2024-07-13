@@ -2,8 +2,9 @@ import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Header from "./conponent/Header";
 import Main from "./conponent/Main";
-import Detail from "./conponent/Detail";
+import { Detail } from "./conponent/Detail";
 import "./componentCss/detail.css";
+import "./componentCss/MainEvent.css";
 
 function App() {
   return (

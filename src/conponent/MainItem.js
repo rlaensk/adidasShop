@@ -25,9 +25,9 @@ const MainItem = () => {
 
   return (
     <div className="MainItemBox flex">
-      {/* <div className="SaleTap">
+      <div className="SaleTap">
         <Sale />
-      </div> */}
+      </div>
       <div className="buttonMenu">
         <ul className="btnList flex">
           {navMenu.map((state, index) => (

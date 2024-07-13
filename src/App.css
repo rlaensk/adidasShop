@@ -7,3 +7,6 @@
   height: auto;
   margin: 0 auto;
 }
+.App {
+  overflow-x: hidden;
+}

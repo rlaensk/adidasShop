@@ -1,10 +1,11 @@
 .detailWrap {
   width: 100vw;
   display: flex;
-  flex-direction: ;
+  position: relative;
+  justify-content: space-between;
 }
 .detailImg {
-  width: 70%;
+  width: 71.3%;
   height: 1300px;
   background-color: antiquewhite;
   display: grid;
@@ -12,34 +13,38 @@
   grid-template-rows: 50%;
   grid-gap: 10px;
   grid-template-areas:
-    "detail1 detail1"
+    "detail1 detail2"
     "detail3 detail4";
 }
 .detailImg div {
   background-color: aqua;
 }
 .imgBox1 {
-  grid-area: "detail1";
+  grid-area: detail1;
 }
 .imgBox2 {
-  grid-area: "detail2";
+  grid-area: detail2;
 }
 .imgBox3 {
-  grid-area: "detail3";
+  grid-area: detail3;
 }
 .imgBox4 {
-  grid-area: "detail4";
+  grid-area: detail4;
 }
 .detailInfo {
-  width: 30%;
+  width: 28%;
   height: 1500px;
-  padding: 30px;
-  right: 0;
-  background-color: aquamarine;
+  position: relative;
+  padding: 30px 50px;
+  top: 0;
+  right: 13px;
+  border: 0.8px solid #9c9c9c;
+  border-right: none;
 }
-.poSticky {
+.poFixed {
   position: fixed;
   top: 0;
+  right: 0;
 }
 .productDetail {
   width: 100%;
@@ -65,4 +70,218 @@
 .price {
   font-size: 1.3rem;
   font-weight: bold;
+}
+.colorBox {
+  width: 100%;
+  height: 150px;
+  margin-top: 30px;
+}
+.colorBox .colorimg {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.colorBox .colorimg div {
+  width: 80px;
+  height: 80px;
+}
+.colorBox .colorimg div img {
+  width: 100%;
+}
+.colorBox .colorText {
+  margin: 10px;
+}
+.sizebox {
+  width: 100%;
+}
+.sizebox p {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+.sizebox .size {
+  border: none;
+  width: 80px;
+  height: 45px;
+  font-size: 1rem;
+  font-weight: 500;
+
+  text-align: center;
+  line-height: 40px;
+  background-color: #d9d7d7;
+}
+.sizebox .changeSize {
+  background-color: #000000;
+  color: #ffff;
+}
+
+.sizebox .sizeGuide {
+  margin-top: 30px;
+  height: 40px;
+}
+.sizebox .sizeGuide img {
+  width: 23px;
+  height: 20px;
+  vertical-align: top;
+}
+.sizebox .sizeGuide .guideText {
+  border: none;
+  background-color: transparent;
+  margin-left: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.sizebox .sizeGuide .guideText:hover {
+  border-bottom: 1px solid #000000;
+}
+
+/* sizguide테이블 */
+.modalWrap {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  background-color: #dad6d6e5;
+  position: fixed;
+
+  z-index: 10;
+}
+.sizeTable {
+  width: 880px;
+  position: absolute;
+  background-color: #eee;
+  z-index: 10;
+  top: 30%;
+  left: 6%;
+}
+table {
+  position: absolute;
+}
+
+table tr,
+th,
+td {
+  width: 140px;
+  height: 60px;
+  text-align: center;
+  border: 1px solid #000000;
+}
+.close {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: #fff;
+  z-index: 10;
+  font-size: 2rem;
+
+  background-color: #fff;
+  text-align: center;
+  right: -3%;
+  top: -7%;
+  border: 1px solid #000;
+}
+.modalWrap .modalBox {
+  position: absolute;
+  width: 1000px;
+  height: 265px;
+  top: 30%;
+  left: 25%;
+  background-color: #fff;
+}
+
+.modalWrap .modalBox h2 {
+  margin: 26px 0 0 57px;
+  font-weight: bold;
+}
+
+/* buyBtn */
+.btnBox {
+  width: 100%;
+}
+.buyBox {
+  width: 100%;
+  height: 100px;
+  margin-top: 50px;
+}
+.buybtnBox {
+  width: 333px;
+  height: 55px;
+  position: absolute;
+  left: 45px;
+}
+.buybtnBox .btnBox a {
+  width: 100%;
+  height: 55px;
+  color: #ffff;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.btnBox {
+  width: 100%;
+  height: 55px;
+  background-color: #000000;
+}
+.buyBackBox {
+  width: 333px;
+  height: 55px;
+  bottom: 49px;
+  border: 1px solid #000000;
+}
+.animation {
+  animation: buyAnimation 0.7s ease;
+}
+@keyframes buyAnimation {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(6px, 5px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.buyBox .wishlist {
+  width: 55px;
+  height: 55px;
+  border: 1px solid #000000;
+  position: absolute;
+  right: 70px;
+  margin: 5px;
+}
+.buyBox .wishlist img {
+  width: 47%;
+  margin: 14px;
+}
+
+.notisBox {
+  width: 100%;
+}
+.notisBox div {
+  display: flex;
+  align-items: center;
+}
+.notisBox div img {
+  width: 20px;
+  height: 20px;
+  vertical-align: super;
+}
+.notisBox .precautionsBox {
+  margin-left: -5px;
+}
+.notisBox .precautionsBox .notisText {
+  margin-left: 8px;
+}
+.notisBox .precautionsBox img {
+  width: 28px;
+  height: 28px;
+}
+.notisBox div div {
+  height: 35px;
+  margin-left: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.notisBox div div:hover {
+  border-bottom: 1px solid #000000;
 }
