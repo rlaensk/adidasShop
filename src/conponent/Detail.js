@@ -27,12 +27,12 @@ const Detail = () => {
   const dispatch = useDispatch();
   const isModalOpen = useSelector((state) => state.sizeModal);
 
-  // const openModal = () => {
-  //   dispatch(guideClick());
-  // };
-  // const closeModalClick = () => {
-  //   dispatch(closeClick());
-  // };
+  const openModal = () => {
+    dispatch();
+  };
+  const closeModalClick = () => {
+    dispatch();
+  };
   const ClickcartBtn = () => {
     setBtnClick(!btnClick);
     setTimeout(() => {
