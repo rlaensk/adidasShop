@@ -14,10 +14,17 @@ const MainEvent = () => {
 
   useEffect(() => {
     const handleMouseEnter = () => {
+      console.log("Mouse entered");
       setArrowBtn(true);
+      if (prevBtnRef.current) {
+        prevBtnRef.current.style.display = "block";
+      } else if (nextBtnRef.current) {
+        prevBtnRef.current.style.display = "block";
+      }
     };
 
     const handleMouseLeave = () => {
+      console.log("Mouse left");
       setArrowBtn(false);
     };
 
@@ -34,17 +41,23 @@ const MainEvent = () => {
         $MEbox.removeEventListener("mouseleave", handleMouseLeave);
       }
     };
-  }, [meBoxRef.current]);
+  }, []);
+
+  useEffect(() => {
+    console.log("Arrow button state changed:", arrowBtn);
+  }, [arrowBtn]);
 
   const handleNextClick = () => {
     if (meRowRef.current) {
       meRowRef.current.style.right = "1140px";
+      console.log("Next button clicked");
     }
   };
 
   const handlePrevClick = () => {
     if (meRowRef.current) {
-      meRowRef.current.style.right = "0px";
+      meRowRef.current.style.right = "-10px";
+      console.log("Prev button clicked");
     }
   };
 

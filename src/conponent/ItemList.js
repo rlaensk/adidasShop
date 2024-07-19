@@ -1,4 +1,4 @@
-import { upTo, y3, last, comfy } from "../date/itenm.js";
+import { upTo, y3, last, comfy, adidasBest } from "../date/itenm.js";
 import React, { useState } from "react";
 
 import { Link } from "react-router-dom";
@@ -114,4 +114,29 @@ const Comfy = () => {
     </div>
   );
 };
-export { UpTo, Y_3, Last, Comfy };
+const Best = () => {
+  return (
+    <div className="hiddenBox">
+      <div className="flex itemBox bestBox">
+        {adidasBest.map((state, index) => (
+          <Link to={"/detail"} key={index} className="flex itemLink">
+            <div className="imgBox">
+              <img src={`${process.env.PUBLIC_URL}${state.url}`} alt="itme" />
+              <img
+                className="wishlist"
+                src={`${process.env.PUBLIC_URL}/hartWhite.png`}
+                alt="wishlist"
+              />{" "}
+              <p className="price">{state.price}</p>
+            </div>
+            <div className="textBox">
+              <p className="titleText">{state.title}</p>
+              <p className="categoryText">{state.category}</p>
+            </div>
+          </Link>
+        ))}
+      </div>
+    </div>
+  );
+};
+export { UpTo, Y_3, Last, Comfy, Best };

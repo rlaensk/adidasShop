@@ -11,6 +11,7 @@ const sale = [
   { id: 2, url: "/salekid.avif", gender: "키즈" },
   { id: 3, url: "/saleall.avif", gender: "전체" },
 ];
+const best = [{ id: "menu1", title: "adidas Best 🔖" }];
 
 const upTo = [
   {
@@ -372,4 +373,106 @@ const comfy = [
     price: "199,000원",
   },
 ];
-export { navMenu, sale, upTo, y3, last, comfy };
+const adidasBest = [
+  {
+    id: 1,
+    url: "/best1.avif",
+    title: "삼바 0G",
+    category: "Originals",
+    price: "139,000원",
+    detail: [
+      {
+        id: "1-1",
+        color: "Cloud White / Core Black / Clear Granite",
+        url1: "/best1-1.avif",
+        url2: "/best1-2.webm",
+        url3: "/best1-3.avif",
+        url4: "/best1-4.avif",
+        size: [220, 230, 240, 250, 260, 270, 280, 290, 300],
+      },
+      {
+        id: "1-2",
+        color: "Core Black / Cloud White / Gum",
+        url1: "/bestB2-1.avif",
+        url2: "/bestB2-2.webm",
+        url3: "/bestB2-3.avif",
+        url4: "/bestB2-4.avif",
+        size: [
+          220, 225, 230, 235, 240, 245, 250, 255, 260, 265, 270, 275, 280, 285,
+          290, 295,
+        ],
+      },
+    ],
+  },
+  {
+    id: 2,
+    url: "/best2.avif",
+    title: "삼바 0G",
+    category: "Originals",
+    price: "139,000원",
+  },
+  {
+    id: 3,
+    url: "/best3.avif",
+    title: "YZY FOAM RNR ADULTS",
+    category: "Originals",
+    price: "139,000원",
+  },
+  {
+    id: 4,
+    url: "/best4.avif",
+    title: "레알 마드리드 24/25 홈 저지",
+    category: "Performance",
+    price: "119,000원",
+  },
+  {
+    id: 5,
+    url: "/best5.avif",
+    title: "아딜렛 24",
+    category: "Originals",
+    price: "79,000원",
+  },
+  {
+    id: 6,
+    url: "/best6.avif",
+    title: "YZY FOAM RNR",
+    category: "Originals",
+    price: "129,000원",
+  },
+  {
+    id: 7,
+    url: "/best7.avif",
+    title: "버뮤다",
+    category: "Originals",
+    price: "139,000원",
+  },
+  {
+    id: 8,
+    url: "/best8.avif",
+    title: "런던",
+    category: "Originals",
+    price: "139,000원",
+  },
+  {
+    id: 9,
+    url: "/best9.avif",
+    title: "아딜렛 클로그",
+    category: "Sportswear",
+    price: "55,000원",
+  },
+  {
+    id: 10,
+    url: "/best10.avif",
+    title: "아디폼 SST 부츠",
+    category: "Originals",
+    price: "129,000원",
+  },
+  {
+    id: 11,
+    url: "/best11.avif",
+    title: "삼바 Decon",
+    category: "Originals",
+    price: "179,000원",
+  },
+];
+export { navMenu, sale, upTo, y3, last, comfy, adidasBest, best };

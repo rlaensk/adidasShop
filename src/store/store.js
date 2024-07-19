@@ -8,7 +8,7 @@ import {
   infoModal,
 } from "./../store/detailSlice.js";
 import { mainEvent } from "./mainEventSlice.js";
-
+import { clickBtn, toggleAnimation } from "./btnClickSlice.js";
 // navMenu라는 slice를 생성합니다.
 let navMenu = createSlice({
   name: "navMenu",
@@ -26,5 +26,6 @@ export default configureStore({
     asModal: asModal.reducer,
     infoModal: infoModal.reducer,
     mainEvent: mainEvent.reducer,
+    clickBtn: clickBtn.reducer,
   },
 });

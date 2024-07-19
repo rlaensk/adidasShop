@@ -1,0 +1,33 @@
+.AboutBox {
+  width: 100%;
+  margin: 100px 0;
+  position: relative;
+}
+.AboutBox .newsBox {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+
+.AboutBox .backgroundColor {
+  width: 100vw;
+  height: 435px;
+  background-color: antiquewhite;
+  position: absolute;
+  top: 0;
+  left: -12%;
+  z-index: -1;
+}
+.AboutBox .newsBox > div {
+  width: 50%;
+}
+.AboutBox .newsBox > div > p {
+  font-size: 0.9rem;
+}
+.AboutBox .AboutOne {
+  margin-right: 50px;
+}
+.AboutBox h3 {
+  font-weight: bold;
+  margin-bottom: 25px;
+}

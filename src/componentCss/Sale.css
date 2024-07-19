@@ -105,6 +105,10 @@ a {
   justify-content: space-between;
   padding: 0;
 }
+.hiddenBox .bestBox {
+  width: 3090px;
+}
+
 .textBox .titleText {
   margin: 10px 0;
   font-size: 0.9rem;

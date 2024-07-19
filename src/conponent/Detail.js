@@ -15,6 +15,7 @@ import {
 import { Link } from "react-router-dom";
 import "./../componentCss/Main.css";
 import Mainslider from "./MainSlider";
+import { adidasBest } from "./AdidasBest.js";
 
 const Detail = () => {
   const [isFixed, setIsFixed] = useState(false);
@@ -79,7 +80,9 @@ const Detail = () => {
     <div className="detailWrap">
       {isModalOpen ? <SizeConponent onClose={closeModalClick} /> : null}
       <div className="detailImg">
-        <div className="imgBox1"></div>
+        <div className="imgBox1">
+          <img src={""} />
+        </div>
 
         <div className="imgBox2"></div>
 

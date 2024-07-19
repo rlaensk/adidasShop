@@ -5,6 +5,7 @@ import Main from "./conponent/Main";
 import { Detail } from "./conponent/Detail";
 import "./componentCss/detail.css";
 import "./componentCss/MainEvent.css";
+import "./componentCss/Main.css";
 
 function App() {
   return (

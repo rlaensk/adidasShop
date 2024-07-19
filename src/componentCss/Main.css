@@ -52,7 +52,7 @@ h1 {
     transform: translate(0, 0);
   }
 }
-.btnBox {
+.mainTextBox .btnBox {
   width: 140px;
   height: 50px;
   align-items: center;
