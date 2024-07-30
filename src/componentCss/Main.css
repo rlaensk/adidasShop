@@ -65,7 +65,7 @@ h1 {
   animation: btnAnimation 0.7s ease;
 }
 .btnBox a {
-  width: 100%;
+  width: 140px;
   height: 100%;
   font-size: 0.8rem;
   color: #000000;

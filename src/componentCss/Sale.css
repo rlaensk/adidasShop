@@ -70,23 +70,25 @@ a {
 .hiddenBox::-webkit-scrollbar-track {
   background-color: #fff;
 }
-.hiddenBox .itemLink {
+.hiddenBox .itemdiv {
   flex-direction: column;
 }
 
-.hiddenBox .itemLink img {
+.hiddenBox .itemdiv img {
   width: 270px;
 }
-.hiddenBox .itemLink .imgBox {
+.hiddenBox .itemdiv .imgBox {
   position: relative;
 }
-.hiddenBox .itemLink .imgBox .wishlist {
+.hiddenBox .itemdiv .imgBox .wishlist {
   width: 20px;
+  height: 16px;
   position: absolute;
-  top: 5px;
-  right: 5px;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
 }
-.hiddenBox .itemLink .price {
+.hiddenBox .itemdiv .price {
   position: absolute;
   bottom: 0;
   background-color: #000;
@@ -97,7 +99,7 @@ a {
   transition: all 0.4s ease;
 }
 
-.hiddenBox .itemLink :hover .price {
+.hiddenBox .itemdiv :hover .price {
   bottom: 10px;
 }
 .hiddenBox .itemBox {

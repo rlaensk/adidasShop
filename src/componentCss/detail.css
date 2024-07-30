@@ -194,9 +194,7 @@ td {
 }
 
 /* buyBtn */
-.btnBox {
-  width: 100%;
-}
+
 .buyBox {
   width: 100%;
   height: 100px;
@@ -208,14 +206,14 @@ td {
   position: absolute;
   left: 45px;
 }
-.buybtnBox .btnBox a {
+.buybtnBox .btnBoxs a {
   width: 100%;
   height: 55px;
   color: #ffff;
   font-size: 1rem;
   font-weight: bold;
 }
-.btnBox {
+.btnBoxs {
   width: 100%;
   height: 55px;
   background-color: #000000;
@@ -241,7 +239,7 @@ td {
   }
 }
 
-.buyBox .wishlist {
+.buyBoxs .wishlist {
   width: 55px;
   height: 55px;
   border: 1px solid #000000;
@@ -249,7 +247,7 @@ td {
   right: 70px;
   margin: 5px;
 }
-.buyBox .wishlist img {
+.buyBoxs .wishlist img {
   width: 47%;
   margin: 14px;
 }

@@ -1,0 +1,72 @@
+.wishListWarp {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+.wishListWarp .wishListBox {
+  width: 900px;
+}
+.wishListWarp .wishListBox .wishListTitle {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 150px;
+}
+.wishListWarp .wishListBox .wishListTitle .wishListCount {
+  font-size: 1.1rem;
+}
+.wishListItemwrap .container {
+  width: 100%;
+  height: auto;
+}
+.container .itemBox {
+  min-width: 900px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.container .itemBox .itemImgBox {
+  width: 200px;
+  height: 255px;
+  padding: 0;
+  position: relative;
+  margin-top: 15px;
+}
+.container .itemBox .itemImgBox .itemImg {
+  width: 99%;
+  position: relative;
+}
+.container .itemBox .itemImg img:first-child {
+  width: 100%;
+}
+.wishlistDelete {
+  width: 20px;
+  height: 15px;
+  position: absolute;
+  right: 8px;
+  top: 10px;
+  cursor: pointer;
+}
+.wishlistPrice {
+  background-color: white;
+  width: 90px;
+  height: 25px;
+  position: absolute;
+  left: 5px;
+  bottom: 0;
+  font-size: 0.8rem;
+  text-align: center;
+  line-height: 25px;
+  transition: all 0.5s;
+}
+.container .itemBox .itemImgBox:hover {
+  border: 1px solid;
+}
+.container .itemBox .itemImgBox:hover .wishlistPrice {
+  bottom: 5px;
+}
+.wishlistTitle {
+  margin: 10px 0 0 10px;
+  font-size: 0.9rem;
+}

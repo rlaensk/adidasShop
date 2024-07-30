@@ -141,7 +141,7 @@ const Detail = () => {
           <div className="buyBox">
             <div className="buybtnBox">
               <div
-                className={`btnBox ${btnClick ? "animation" : ""}`}
+                className={`btnBoxs ${btnClick ? "animation" : ""}`}
                 onClick={() => ClickcartBtn()}
               >
                 <Link className="flex" to={""}>

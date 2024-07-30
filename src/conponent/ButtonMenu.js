@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { navMenu } from "../date/itenm.js";
 import "../componentCss/MainItem.css";
-import { UpTo, Y_3, Last, Comfy } from "./ItemList.js";
+import { MajorItem } from "./ItemList.js";
 
 const ButtonMenu = () => {
   const [navlist, setNavlist] = useState({ menu1: true });
@@ -9,10 +9,10 @@ const ButtonMenu = () => {
   const [selectedMenu, setSelectedMenu] = useState("menu1");
 
   const menuComponent = {
-    menu1: <UpTo />,
-    menu2: <Y_3 />,
-    menu3: <Last />,
-    menu4: <Comfy />,
+    menu1: <MajorItem category="upto" />,
+    menu2: <MajorItem category="y_3" />,
+    menu3: <MajorItem category="last" />,
+    menu4: <MajorItem category="comfy" />,
   };
   const btnClick = (id) => {
     setNavlist((menu) => ({

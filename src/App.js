@@ -6,7 +6,10 @@ import { Detail } from "./conponent/Detail";
 import "./componentCss/detail.css";
 import "./componentCss/MainEvent.css";
 import "./componentCss/Main.css";
-
+import WishList from "./conponent/WishList";
+import Footer from "./conponent/Footer";
+import MyPage from "./conponent/MyPage";
+import Cart from "./conponent/Cart";
 function App() {
   return (
     <div className="App">
@@ -14,10 +17,12 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Main />}></Route>
-        <Route path="/saleMan" element={<div>SALE 남자상품</div>} />
+        <Route path="/wishList" element={<WishList />} />
         <Route path="/detail" element={<Detail />} />
-        {/* 추가적인 라우트를 여기에 정의할 수 있습니다 */}
+        <Route path="/myPage" element={<MyPage />} />
+        <Route path="/cart" element={<Cart />} />
       </Routes>
+      <Footer />
     </div>
   );
 }

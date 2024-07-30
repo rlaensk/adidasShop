@@ -1,0 +1,91 @@
+.categorySlide {
+  width: 100vw;
+  height: 640px;
+  position: absolute;
+  background-color: #ffffff;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-top: 0.7px solid rgb(238, 238, 238);
+}
+.outletSlide {
+  height: 360px;
+}
+.categorySlide .categorySubject {
+  display: flex;
+  width: 1200px;
+  height: 100%;
+}
+.categorySlide .categorySubject > li {
+  width: 200px;
+  margin-left: 30px;
+  padding-top: 30px;
+}
+.categorySlide .categorySubject ul li {
+  width: 100%;
+  height: 30px;
+}
+.categorySlide .categorySubject .categoryChild > ul {
+  width: 200px;
+}
+.categorySlide .categorySubject .sportsLiImg {
+  height: 100px;
+}
+.categorySlide .categorySubject .brandImg {
+  height: 160px;
+}
+.categorySlide .categorySubject .brandImg img {
+  width: 100%;
+}
+.categorySlide .categorySubject ul li a {
+  font-size: 0.9rem;
+  display: inline-block;
+  font-weight: 400;
+}
+.categorySlide .categorySubject ul li img {
+  display: block;
+  margin-top: 10px;
+  width: 150px;
+}
+.categorySlide .categorySubject ul li:not(.kidsALink, .brandImg) a:hover {
+  border-bottom: 1px solid;
+}
+
+.categorySlide .categorySubject .categoryChild {
+  border-right: 0.7px solid rgb(238, 238, 238);
+  width: 300px;
+}
+.categorySlide .categorySubject .categoryChild .outletImg {
+  width: 260px;
+}
+.categorySlide .categorySubject h4 {
+  font-size: 1.3rem;
+}
+.menAll {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 0.7px solid rgb(238, 238, 238);
+}
+.menAll ul {
+  display: flex;
+  width: 1200px;
+}
+.menAll ul li {
+  width: 200px;
+  margin-left: 30px;
+}
+.menAll ul li a {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+.menAll ul li a:hover {
+  border-bottom: 1px solid;
+}
+.menAll ul .menAllSee {
+  width: 300px;
+}

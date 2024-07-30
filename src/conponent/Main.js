@@ -10,7 +10,9 @@ import AdidasBest from "./AdidasBest";
 import News from "./News";
 import "./../componentCss/news.css";
 import AboutAdidas from "./AboutAdidas";
-import JoinEvent from "./JoinEvent.js";
+import Membership from "./Membership";
+import Footer from "./Footer";
+
 const Main = () => {
   return (
     <>
@@ -21,8 +23,8 @@ const Main = () => {
         <AdidasBest />
         <News />
         <AboutAdidas />
-        <JoinEvent />
       </div>
+      <Membership />
     </>
   );
 };

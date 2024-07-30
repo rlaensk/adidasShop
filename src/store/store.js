@@ -8,13 +8,21 @@ import {
   infoModal,
 } from "./../store/detailSlice.js";
 import { mainEvent } from "./mainEventSlice.js";
-import { clickBtn, toggleAnimation } from "./btnClickSlice.js";
+import clickBtn from "./btnClickSlice.js";
+import itemSlice from "./hartClick.js";
+
 // navMenu라는 slice를 생성합니다.
 let navMenu = createSlice({
   name: "navMenu",
   initialState: [],
   reducers: {}, // 현재 reducers는 비어 있습니다.
 });
+const saleSlice = createHartClickSlice("sale");
+const bestSlice = createHartClickSlice("best");
+export const { clickHart: clickHartForSale, deleteItem: deleteItemForSale } =
+  saleSlice.actions;
+export const { clickHart: clickHartForBest, deleteItem: deleteItemForBest } =
+  bestSlice.actions;
 
 // Redux store를 설정합니다.
 export default configureStore({
@@ -27,5 +35,6 @@ export default configureStore({
     infoModal: infoModal.reducer,
     mainEvent: mainEvent.reducer,
     clickBtn: clickBtn.reducer,
+    items: itemSlice.reducer,
   },
 });
