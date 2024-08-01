@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { navMenu } from "../date/itenm.js";
 import "../componentCss/MainItem.css";
-import { MajorItem } from "./ItemList.js";
+import MajorItem from "./MajorItem.js";
 
 const ButtonMenu = () => {
   const [navlist, setNavlist] = useState({ menu1: true });

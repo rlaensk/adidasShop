@@ -5,7 +5,7 @@ import Col from "react-bootstrap/Col";
 import { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
-import { deleteItemForBest, deleteItemForSale } from "../store/store";
+import { deleteItem } from "./../store/hartClick.js";
 
 const WishList = () => {
   const [wishlist, setWishlist] = useState([]);
@@ -22,11 +22,7 @@ const WishList = () => {
     // Redux 스토어에서도 삭제합니다. (sale, best 여부에 따라 다른 액션 디스패치)
     const item = wishlist.find((item) => item.id === id);
     if (item) {
-      if (item.listType === "sale") {
-        dispatch(deleteItemForSale(id));
-      } else if (item.listType === "best") {
-        dispatch(deleteItemForBest(id));
-      }
+      dispatch(deleteItem(id));
     }
   };
 

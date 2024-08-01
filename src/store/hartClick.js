@@ -1,14 +1,14 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const intialState = {
+const initialState = {
   upto: [],
   y_3: [],
   last: [],
   comfy: [],
 };
-const itemSlice = createSlice({
-  name: "",
-  intialState,
+const items = createSlice({
+  name: "items",
+  initialState,
   reducers: {
     clickHart(state, action) {
       const { category, id } = action.payload;
@@ -26,6 +26,6 @@ const itemSlice = createSlice({
     },
   },
 });
-export const { clickHart, deleteItem } = itemSlice.actions;
+export const { clickHart, deleteItem } = items.actions;
 
-export default itemSlice;
+export default items;

@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { best } from "../date/itenm.js";
 import "../componentCss/MainItem.css";
-import MajorItem, { adidasBest } from "./ItemList.js";
-import { Best } from "./ItemList.js";
+import MajorItem from "./MajorItem.js";
 
 const AdidasBest = () => {
   const [navlist, setNavlist] = useState({ menu1: true });
